@@ -1,9 +1,10 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import Navbar from './components/Navbar';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('It renders the App', () => {
+  const wrapper = shallow(<App />);
+
+  expect(wrapper.find(Navbar).exists).toBeTruthy();
+})

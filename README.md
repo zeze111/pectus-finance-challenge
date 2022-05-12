@@ -15,32 +15,42 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### `npm test`
+Runs the tests written with jest and enzyme.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm lint`
+Runs the linting operation across all javascript and typescript files
 
-### `npm run build`
+## Tech Stack
+This project was built using the following technologies:
+- React
+- Typescript
+- Styled Components for css stylings
+- Jest/Enzymes for testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Acceptance Criteria
+As a user:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- I want to see a expanses data in tabular form.
+- I should able to perform sort(asc/descending order) operation by clicking on each column header
+- I should able to see total sum of expanses by departments, project_name, date and by member_name
+- I should able to see total sum of value in amount column
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Finished Product
+I was able to implement the first 2 requirements of the A/C which is to display expenses data in tabular form and allow for column sorting. Due to the 3hrs time limit, I was unable to attempt the other 2 functionalities.
 
-### `npm run eject`
+Notes:
+- I have worked with typescript in the past but in situations where it had already been set up. Although bootstrapping the app helped with majority of the setup, I still had some manual changes to make especially with jest. It was a bit challenging but I was able to reslve all issues surronding that.
+- Would also like to note this was my first experience with styled components, not challenging but definitely eye opening in regards to usability, readability and maintainablility.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Homepage:
+This is the first view the user interacts with, it consist of a field and button that allows the user upload the csv file for viewing
+![Alt text](src/assets/images/Homepage.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Table View:
+- The first screenshot shows the table view of the csv file. In this view, the user has clicked on the `Department` column, resulting in an ascending sort of that column.
+- The second screenshot shows the table sorted by name in ascending order
+- The third screenshot shows the table sorted by name in descending order
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Alt text](src/assets/images/Asc-dept-order.png)
+![Alt text](src/assets/images/Asc-name-order.png)
+![Alt text](src/assets/images/Desc-name-order.png)
