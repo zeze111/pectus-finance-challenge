@@ -4,6 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+To run this app on your local system, you can do the following;
+
+Clone the application using `git clone git@github.com:zeze111/pectus-finance-challenge.git`
+
+Change the directory on your terminal to the project folder e.g `cd pectus-finance-challenge`
+
+Install on node dependencies using `npm install`
+
 In the project directory, you can run:
 
 ### `npm start`
